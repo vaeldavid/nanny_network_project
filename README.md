@@ -80,4 +80,4 @@ nanny_network_project/
 ## 📝 License & Credits
 
 - **Copyright:** © 2026 Nanny Network. All rights reserved. • **Copyright: Vael David 2026**
-- **Designed by:** [DSAP46 Group 6 Web Designers](https://www.vaeldee.com.ng)
+- **Designed by:** DSAP46 Group 6 Web Designers
