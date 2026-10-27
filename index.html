@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nanny Network - Connecting Families with Care</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Comfortaa:wght@500;700&display=swap"
+        rel="stylesheet"> -->
+
+    <!-- we added font awesome CDN to help with social media icons -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="nanny-network.css">
+    <!--
+
+Free HTML CSS Template
+
+-->
+</head>
+
+<body>
+    <!-- Floating Background Shapes -->
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <img src="images/nanny_network.jpg" alt="Nanny Network logo" class="logo-img">
+                Nanny Network
+            </a>
+
+            <!-- THE MENU LINKS REDIRECT TO THE DIFFERENT SECTIONS IN THE SITE PROJECT -->
+            <ul class="nav-links">
+                <li><a href="#features">Home</a></li>
+                <li><a href="#how-it-works">Find a Nanny</a></li>
+                <li><a href="#preview">Become a Nanny</a></li>
+                <li><a href="#testimonials">Our Services</a></li>
+
+            </ul>
+            <a href="#login" class="nav-cta">Login</a>
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileOverlay"></div>
+
+    <!-- Mobile Menu Panel -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-menu-links">
+            <li><a href="#features">Home</a></li>
+            <li><a href="#how-it-works">Find a Nanny</a></li>
+            <li><a href="#preview">Become a Nanny</a></li>
+            <li><a href="#testimonials">Our Services</a></li>
+        </ul>
+        <a href="#download" class="mobile-menu-cta">Download Free</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <!-- 1. Background Video (Confined to Hero) -->
+        <video autoplay muted loop playsinline class="hero-bg-video">
+            <source src="video/hero_background_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <!-- 2. Overlay (Keeps text clear and readable) -->
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <!-- <span class="sparkle">✨</span> -->
+                    Trusted Hands, Happy Hearts
+                </div>
+                <h1>care you can trust, <span>love</span> they deserve</h1>
+                <p>Finding the right Nanny shouldn't be stressful. Nanny Network connect families with caring, reliable
+                    childcare providers to give your little ones the attention they deserve and you, the peace of
+                    mind you need.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#download" class="btn btn-primary">
+                        <span>🔍</span> Find a Nanny
+                    </a>
+                    <a href="#preview" class="btn btn-secondary">
+                        <span>👉</span> Become a Nanny
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+
+                <!-- WE REMOVED THE MASCOT -->
+                <!-- Mochi Mascot
+                <div class="mochi mochi-main">
+                    <span class="mochi-sparkle">✨</span>
+                    <span class="mochi-sparkle">⭐</span>
+                    <span class="mochi-sparkle">💖</span>
+                    <div class="mochi-body">
+                        <div class="mochi-face">
+                            <div class="mochi-eye"></div>
+                            <div class="mochi-eye"></div>
+                        </div>
+                        <div class="mochi-blush left"></div>
+                        <div class="mochi-blush right"></div>
+                        <div class="mochi-mouth"></div>
+                    </div>
+                </div> -->
+
+                <!-- WE REPLACED THE PHONE MOCKUP WITH OURS -->
+                <!-- Phone Mockup -->
+                <!-- <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <div class="phone-content">
+                            <div class="phone-clock-wrapper">
+                                <div class="phone-clock" id="phoneClock">
+                                    <span class="clock-time">00:00</span><span class="clock-seconds">:00</span>
+                                    <span class="clock-ampm"></span>
+                                </div>
+                                <button class="clock-toggle" id="clockToggle">24h</button>
+                            </div>
+                            <div class="phone-greeting" id="phoneGreeting">Good morning! 🌸</div>
+                            <div class="phone-mood-label">How are you feeling today?</div>
+                            <div class="phone-moods">
+                                <div class="mood-btn">😊</div>
+                                <div class="mood-btn active">🥰</div>
+                                <div class="mood-btn">😌</div>
+                                <div class="mood-btn">😔</div>
+                            </div>
+                            <div class="phone-card">
+                                <div class="phone-card-title">🌿 Breathing Exercise</div>
+                                <div class="breathing-circle"></div>
+                            </div>
+                        </div>
+                        <div class="phone-nav">
+                            <div class="phone-nav-item active">🏠</div>
+                            <div class="phone-nav-item">📝</div>
+                            <div class="phone-nav-item">🎵</div>
+                            <div class="phone-nav-item">⚙️</div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <img src="images/nanny_network_hero_mockup.png" alt="Nanny Network app preview"
+                            class="phone-mockup-img">
+                        <!-- THIS WAS NO LONGER NEEDED -->
+                        <!-- <div class="phone-nav">
+                            <div class="phone-nav-item active">🏠</div>
+                            <div class="phone-nav-item">📝</div>
+                            <div class="phone-nav-item">🎵</div>
+                            <div class="phone-nav-item">⚙️</div>
+                        </div> -->
+                    </div>
+                </div>
+
+                <!-- WE REMOVED FLOATING ELEMENTS -->
+
+                <!-- Floating Elements
+                <div class="float-element float-heart">💕</div>
+                <div class="float-element float-star">⭐</div>
+                <div class="float-element float-cloud">☁️</div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- WE REMOVED THE ICONS ON EACH CARD BEFORE THE HEADERS -->
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="section-header reveal">
+            <div class="section-badge">
+                Loving Hands
+            </div>
+            <h2>Your Family's Perfect Care!</h2>
+            <p>A Platform that connects you with caring, reliable and experienced nannies who understands your family's
+                needs.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card reveal">
+                <div class="feature-image">
+                    <!-- PREVIOUS CODE (COMMENTED OUT)
+                    <!-- <div class="feature-image-inner">
+                        <div class="feature-screenshot mood-screenshot">
+                            <div class="mood-screenshot-title">How do you feel?</div>
+                            <div class="mood-screenshot-emojis">
+                                <div class="mood-screenshot-emoji">😊</div>
+                                <div class="mood-screenshot-emoji selected">🥰</div>
+                                <div class="mood-screenshot-emoji">😌</div>
+                                <div class="mood-screenshot-emoji">😔</div>
+                            </div>
+                            <div class="mood-screenshot-chart">
+                                <div class="mood-bar" style="height: 60%;"></div>
+                                <div class="mood-bar" style="height: 80%;"></div>
+                                <div class="mood-bar" style="height: 45%;"></div>
+                                <div class="mood-bar" style="height: 90%;"></div>
+                                <div class="mood-bar" style="height: 70%;"></div>
+                                <div class="mood-bar" style="height: 85%;"></div>
+                                <div class="mood-bar" style="height: 95%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    END PREVIOUS CODE --> -->
+                    <img src="images/vetted_care_asset.jpg" alt="Vetted Care-givers" class="feature-asset-img">
+                </div>
+                <div class="feature-content">
+                    <h3>Vetted Care-givers</h3>
+                    <p>Connect with fully background checked, CPR Certified and reference verified nannies. Enjoy
+                        peace of mind knowing your family is in safe, experienced hands.
+                    </p>
+                    <span class="feature-tag">✨ 100% Background checked</span>
+                </div>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-image">
+                    <!-- PREVIOUS CODE (COMMENTED OUT)
+                    <div class="feature-image-inner">
+                        <div class="feature-screenshot breathing-screenshot">
+                            <div class="breathing-screenshot-text">Breathe in...</div>
+                            <div class="breathing-screenshot-circle"></div>
+                            <div class="breathing-screenshot-timer">4 : 7 : 8 technique</div>
+                        </div>
+                    </div>
+                    END PREVIOUS CODE -->
+                    <img src="images/nanny_card_assets.jpg" alt="On Demand & Recurring Care" class="feature-asset-img">
+                </div>
+                <div class="feature-content">
+                    <h3>On Demand & Recurring Care</h3>
+                    <p>Whether you need a full-time nanny, part-time help, or a last minute evening seater,
+                        easily find and schedule care that fits your family's unique calendar.
+                    </p>
+                    <span class="feature-tag">🧘 Instant Booking</span>
+                </div>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-image">
+                    <!-- PREVIOUS CODE (COMMENTED OUT)
+                    <div class="feature-image-inner">
+                        <div class="feature-screenshot journal-screenshot">
+                            <div class="journal-screenshot-header">
+                                <div class="journal-screenshot-date">Today</div>
+                                <div class="journal-screenshot-mood">🥰</div>
+                            </div>
+                            <div class="journal-screenshot-card">
+                                <div class="journal-screenshot-label">I'm grateful for...</div>
+                                <div class="journal-screenshot-line"></div>
+                                <div class="journal-screenshot-line"></div>
+                                <div class="journal-screenshot-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                    END PREVIOUS CODE -->
+                    <img src="images/realtime_asset.jpg" alt="Real Time Care Updates" class="feature-asset-img">
+                </div>
+                <div class="feature-content">
+                    <h3>Real Time Care Updates</h3>
+                    <p>Stay connected throughout the day with live updates on meals, naps, play activities and
+                        milestone photos shared directly by your nanny.
+                    </p>
+                    <span class="feature-tag">📝 Live Updates and Photos</span>
+                </div>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-image">
+                    <!-- PREVIOUS CODE (COMMENTED OUT)
+                    <div class="feature-image-inner">
+                        <div class="feature-screenshot sleep-screenshot">
+                            <div class="sleep-screenshot-icon">🌙</div>
+                            <div class="sleep-screenshot-title">Ocean Waves</div>
+                            <div class="sleep-screenshot-waves">
+                                <div class="sleep-wave"></div>
+                                <div class="sleep-wave"></div>
+                                <div class="sleep-wave"></div>
+                                <div class="sleep-wave"></div>
+                                <div class="sleep-wave"></div>
+                                <div class="sleep-wave"></div>
+                                <div class="sleep-wave"></div>
+                            </div>
+                        </div>
+                    </div>
+                    END PREVIOUS CODE -->
+                    <img src="images/nanny_community_asset.jpg" alt="Trusted Community Ratings"
+                        class="feature-asset-img">
+                </div>
+                <div class="feature-content">
+                    <h3>Trusted Community Ratings</h3>
+                    <p>Read authentic reviews and testimonials from local families in your neighborhood to find a
+                        caregiver best match with your parenting style.</p>
+                    <span class="feature-tag">Verified Reviews</span>
+                </div>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-image">
+                    <!-- PREVIOUS CODE (COMMENTED OUT)
+                    <div class="feature-image-inner">
+                        <div class="feature-screenshot affirmations-screenshot">
+                            <div class="affirmations-icon">💝</div>
+                            <div class="affirmations-card">
+                                <div class="affirmations-text">"You are worthy of love and kindness, especially from
+                                    yourself."</div>
+                                <div class="affirmations-hearts">💕 💕 💕</div>
+                            </div>
+                        </div>
+                    </div>
+                    END PREVIOUS CODE -->
+                    <img src="images/seamless_payment_asset.jpg" alt="Direct Chat & Seamless Pay"
+                        class="feature-asset-img">
+                </div>
+                <div class="feature-content">
+                    <h3>Direct Chat & Seamless Payment</h3>
+                    <p>Communicate seamlessly with care-givers, conduct interview chats, and manage payments
+                        or hourly tracking securely within the platform. </p>
+                    <span class="feature-tag">Automated Payroll</span>
+                </div>
+            </div>
+
+            <div class="feature-card reveal">
+                <div class="feature-image">
+                    <!-- PREVIOUS CODE (COMMENTED OUT)
+                    <div class="feature-image-inner">
+                        <div class="feature-screenshot habits-screenshot">
+                            <div class="habits-title">🎯 Match Criteria: 98%</div>
+                            <div class="habits-list">
+                                <div class="habit-item">
+                                    <div class="habit-check done">✓</div>
+                                    <span>CPR & First Aid Certified</span>
+                                    <span class="habit-streak">Verified</span>
+                                </div>
+                                <div class="habit-item">
+                                    <div class="habit-check done">✓</div>
+                                    <span>Multilingual / French</span>
+                                    <span class="habit-streak">Matched</span>
+                                </div>
+                                <div class="habit-item">
+                                    <div class="habit-check done">✓</div>
+                                    <span>Special Needs & Tutoring</span>
+                                    <span class="habit-streak">Matched</span>
+                                </div>
+                                <div class="habit-item">
+                                    <div class="habit-check pending">○</div>
+                                    <span>Infant Care (0–2 yrs)</span>
+                                    <span class="habit-streak">Optional</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    END PREVIOUS CODE -->
+                    <img src="images/tailoredagency_asset.jpg" alt="Tailored Family Matching" class="feature-asset-img">
+                </div>
+                <div class="feature-content">
+                    <h3> Tailored Family Matching</h3>
+                    <p>Set specific reference like multilingual skills, special needs experience or tutoring
+                        abilities to discover nannies tailored to your children's needs.
+                    </p>
+                    <span class="feature-tag">Smart Match Technology</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="section-header reveal">
+            <div class="section-badge">
+                Care Made Simple
+            </div>
+            <h2>Hire a Nanny for your family in just 3 easy steps.</h2>
+            <p>No complicated setup. Just download, open, and let our Nanny Network do the rest.</p>
+        </div>
+        <div class="steps">
+            <div class="step reveal">
+                <div class="step-number">1</div>
+                <h3>Create your profile and share your needs</h3>
+                <p>Sign up in minutes and tell us about your family's schedule, preference, & specific
+                    care your children needs!</p>
+            </div>
+            <div class="step reveal">
+                <div class="step-number">2</div>
+                <h3>Connect with Vetted Nannies</h3>
+                <p>Browse background-checked local care givers, read parents' reviews, and interview top
+                    matches directly through secured chats.</p>
+            </div>
+            <div class="step reveal">
+                <div class="step-number">3</div>
+                <h3>Book care and enjoy peace of mind</h3>
+                <p>Schedule shifts seamlessly, track daily activities in real time and secure automated payments
+                    all in one place.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Preview -->
+    <section class="app-preview" id="preview">
+        <!-- PREVIOUS CODE (COMMENTED OUT)
+        <div class="section-header reveal">
+            <div class="section-badge">
+                <span>📱</span> Sneak peek
+            </div>
+            <h2>A cozy space just for you</h2>
+            <p>Every screen is designed to bring you calm and joy. Take a look inside!</p>
+        </div>
+        <div class="preview-screens">
+            <div class="preview-phone reveal">
+                <div class="preview-screen preview-screen-1">
+                    <div class="preview-mini-mochi"></div>
+                    <div class="preview-text">Welcome back! 🌸</div>
+                </div>
+            </div>
+            <div class="preview-phone reveal">
+                <div class="preview-screen preview-screen-2">
+                    <div class="preview-text">Breathe in...</div>
+                    <div class="preview-breath-circle"></div>
+                    <div class="preview-text">...and relax 💫</div>
+                </div>
+            </div>
+            <div class="preview-phone reveal">
+                <div class="preview-screen preview-screen-3">
+                    <div class="preview-journal">
+                        <div class="preview-journal-date">Today, January 9</div>
+                        <div class="preview-journal-mood">🥰</div>
+                        <div class="preview-journal-text">Grateful for: Morning coffee, a good book, and cozy
+                            blankets...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        END PREVIOUS CODE -->
+
+        <!-- NEW NANNY NETWORK APP PREVIEW -->
+        <div class="section-header reveal">
+            <div class="section-badge">
+                <span>📱</span> App Sneak Peek
+            </div>
+            <h2>Care Management in Your Pocket</h2>
+            <p>Everything you need to find, book, and stay connected with your caregiver in real-time.</p>
+        </div>
+        <div class="preview-screens">
+            <!-- Screen 1: Top Nanny Match -->
+            <div class="preview-phone reveal">
+                <div class="preview-screen preview-screen-1">
+                    <div class="preview-top-bar">Caregiver Profile</div>
+                    <div class="nanny-profile-card">
+                        <div class="nanny-avatar">👩‍🍼</div>
+                        <div class="nanny-name">Sarah M.</div>
+                        <div class="nanny-tags">
+                            <span class="nanny-tag">🛡️ Verified</span>
+                            <span class="nanny-tag">🩺 CPR</span>
+                        </div>
+                        <div class="nanny-rating">⭐ 4.9 <span>(48 reviews)</span></div>
+                        <div class="nanny-rate">$22/hr • 5 yrs exp</div>
+                        <div class="nanny-badge-status">⚡ Available Today</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Screen 2: Live Activity Feed -->
+            <div class="preview-phone reveal">
+                <div class="preview-screen preview-screen-2">
+                    <div class="preview-top-bar">Live Care Feed</div>
+                    <div class="care-timeline">
+                        <div class="timeline-item">
+                            <span class="timeline-icon">🍎</span>
+                            <div class="timeline-info">
+                                <strong>Morning Snack</strong>
+                                <small>10:15 AM • Fruit & Milk</small>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-icon">😴</span>
+                            <div class="timeline-info">
+                                <strong>Nap Time (1.5h)</strong>
+                                <small>1:00 PM • Slept peacefully</small>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-icon">🎨</span>
+                            <div class="timeline-info">
+                                <strong>Sensory Play</strong>
+                                <small>3:30 PM • Story & drawing</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-status">✨ All routines on track</div>
+                </div>
+            </div>
+
+            <!-- Screen 3: Parent Daily Care Log -->
+            <div class="preview-phone reveal">
+                <div class="preview-screen preview-screen-3">
+                    <div class="preview-top-bar">Daily Care Log</div>
+                    <div class="preview-journal">
+                        <div class="preview-journal-date">Today's Report • 4:30 PM</div>
+                        <div class="preview-journal-mood">🥰</div>
+                        <div class="preview-journal-text">
+                            "Leo had a wonderful day! He finished his lunch, enjoyed storytime in the garden, and had a
+                            restful nap."
+                        </div>
+                        <div class="preview-journal-author">— Nanny Sarah 🌸</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="section-header reveal">
+            <div class="section-badge">
+                <span>💬</span> Love notes
+            </div>
+            <h2>What our families says</h2>
+            <p>Join thousands of families who've found care from Nanny Network.</p>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card reveal">
+                <div class="testimonial-avatar">
+                    <!-- PREVIOUS CODE (COMMENTED OUT): 👩‍🎨 -->
+                    <img src="images/review_uche.jpg" alt="Uche K." class="testimonial-avatar-img">
+                </div>
+                <p class="testimonial-text">"Finding reliable child-care used to be overwhelming, but this network
+                    made it effortless; we matched with an experienced CPR certified nanny who instantly
+                    clicked with our toddlers"</p>
+                <div class="testimonial-author">Uche K.</div>
+                <div class="testimonial-role">Mom of 4.</div>
+                <div class="testimonial-location">Lagos, Nigeria</div>
+            </div>
+            <div class="testimonial-card reveal">
+                <div class="testimonial-avatar">
+                    <!-- PREVIOUS CODE (COMMENTED OUT): 👨‍💻 -->
+                    <img src="images/review_alexander.jpg" alt="Alexander Agidi" class="testimonial-avatar-img">
+                </div>
+                <p class="testimonial-text">"A background verification and real-time daily activity log gives me
+                    complete confidence while at work. I love receiving updates and photos check-ins
+                    throughout the day."</p>
+                <div class="testimonial-author">Alexander Agidi .</div>
+                <div class="testimonial-role">Real Estate</div>
+                <div class="testimonial-location">Accra, Ghana</div>
+            </div>
+            <div class="testimonial-card reveal">
+                <div class="testimonial-avatar">
+                    <!-- PREVIOUS CODE (COMMENTED OUT): 👩‍🎓 -->
+                    <img src="images/review_idowu.jpg" alt="Idowu A." class="testimonial-avatar-img">
+                </div>
+                <p class="testimonial-text">"My work shift changes weekly, so finding flexible on demand seater
+                    was crucial. The booking process is seamless and every caregiver I booked
+                    has been exceptional. "</p>
+                <div class="testimonial-author">Idowu A.</div>
+                <div class="testimonial-role">Father of 2.</div>
+                <div class="testimonial-location">Texas, USA</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download CTA -->
+    <section class="download-cta" id="download">
+        <div class="cta-content reveal">
+            <div class="cta-mochi">
+                <div class="cta-mochi-mouth"></div>
+                <div class="cta-mochi-blush left"></div>
+                <div class="cta-mochi-blush right"></div>
+                <div class="cta-mochi-hand"></div>
+            </div>
+            <h2>Ready to find your perfect Nanny?</h2>
+            <p>Download now and connect with trusted, background-checked care givers in your area today. Safe,
+                reliable child-care is just a tap away</p>
+            <div class="app-buttons">
+                <a href="#" class="app-btn">
+                    <span class="app-btn-icon"><i class="fa-brands fa-apple"></i></span>
+                    <div class="app-btn-text">
+                        <div class="app-btn-small">Download on the</div>
+                        <div class="app-btn-large">App Store</div>
+                    </div>
+                </a>
+                <a href="#" class="app-btn">
+                    <span class="app-btn-icon"><i class="fa-brands fa-google-play"></i></span>
+                    <div class="app-btn-text">
+                        <div class="app-btn-small">Get it on</div>
+                        <div class="app-btn-large">Google Play</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-wrapper">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#home" class="logo">
+                        <img src="images/nanny_network.jpg" alt="Nanny Network logo" class="logo-img">
+                        Nanny Network
+                    </a>
+                    <p>Finding the right Nanny shouldn't be stressful. Nanny Network connect families with caring,
+                        reliable
+                        childcare providers to give your little ones the attention they deserve and you, the peace of
+                        mind you need.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon" aria-label="Facebook"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon" aria-label="Instagram"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#" class="social-icon" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>About Us</h4>
+                    <ul>
+                        <li><a href="#">How it Works</a></li>
+                        <li><a href="#">Apply as a Nanny</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Community Review</h4>
+                    <ul>
+                        <li><a href="#">Parents' FAQs</a></li>
+                        <li><a href="#">Nanny FAQs</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Pricing Plans</h4>
+                    <ul>
+                        <li><a href="#">Safety and Trust</a></li>
+                        <li><a href="#">Safety Guidelines</a></li>
+                        <li><a href="#">Caregiver Resources</a></li>
+                        <li><a href="#">Find a Nanny</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nanny Network. All rights reserved. &bull; Copyright: Vael David 2026</p>
+                <p>Designed by <a href="https://www.vaeldee.com.ng" rel="nofollow" target="_blank">DSAP46 Group 6 Web
+                        Designers</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="nanny-network-script.js"></script>
+</body>
+
+</html>
